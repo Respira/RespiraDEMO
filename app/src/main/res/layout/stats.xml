@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutAvg"
+        android:visibility="invisible"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".50"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/lblgoal"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Goal WPM"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblgoal"
+                android:layout_marginStart="10dp"
+                android:id="@+id/goal"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/lblavg"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="Average WPM"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblavg"
+                android:id="@+id/avg"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:visibility="gone"
+        android:id="@+id/graph"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="30dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:smoothScrollbar="true"
+        android:id="@android:id/list"
+        >
+    </ListView>
+</LinearLayout>

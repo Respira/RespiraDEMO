@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:background="@drawable/respira_no_title"
+    android:backgroundTint="#704ebcc2"
+    >
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/create_habit"
+        android:id="@+id/create_habti"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_habti"
+        android:layout_centerHorizontal="true"
+        android:text="Creating a habit"
+        android:textSize="45dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+
+    <TextView
+        android:text="Fluent talking starts with controlled speaking, the goal of this project is creating a platform that can help you speak calm and fluent.\n
+\nWe measure the words per minute you talk, a controlled speech produces a steady range of 70-100 words per minutes (WPM).
+\nTry to breath relaxed and do not rush. Its best to say a few words per breath, so you have some time to prepare your next words.
+\nThere is also a website being developed where you'll be able to follow your progress. This way you can turn practice into habit and see the result.
+\n\nThe second technique we use is measuring the breaths per minute, we do this with a bluetooth belt, the prototype already works.
+\nWe are still looking for funding of the belt. \nWe can almost start distributing them!
+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView4"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+       />
+
+</RelativeLayout>

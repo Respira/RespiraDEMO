@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:background="@drawable/respira_no_title"
+    android:backgroundTint="#704ebcc2"
+    >
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/development_icon"
+        android:id="@+id/create_habit"
+        />
+
+    <TextView
+        android:text="Working on it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workingonit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:layout_below="@id/create_habit"
+        android:textSize="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:text="This app is still under construction!
+        \n\nPlease provide feedback so we can improve our application and make the experience as pleasant as possible.
+        \n\nWe momentarily support four languages and can help you during voice calls.
+        \nSpecial thanks to the developers of google voice-to-text and android-feedback libraries for helping to make this app possible!"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workingonit"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+         />
+
+<TextView
+    android:text="Please rate the app in the play store!"
+    android:textAlignment="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView4"
+    android:layout_marginTop="10dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:textStyle="bold"
+    />
+    <Button
+        android:background="#4ebcc2"
+        android:textColor="#FEFEFE"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Lets get started"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/startRespira"
+        android:textSize="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>

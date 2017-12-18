@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/titledialogwpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:text="Select your preferred\nWords Per Minute"
+        android:layout_centerHorizontal="true"
+        />
+
+    <NumberPicker
+        android:id="@+id/numberPickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titledialogwpm"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Set WPM"
+        android:layout_below="@+id/numberPickerDialog"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

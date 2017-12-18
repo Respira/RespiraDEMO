@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="190dp"
+android:layout_alignParentBottom="true"
+android:layout_marginTop="10dp"
+android:id="@+id/verdwijn"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lblgoal"
+    android:textStyle="bold"
+    android:textSize="25sp"
+    android:text="Goal"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lblgoal"
+    android:layout_marginStart="10dp"
+    android:id="@+id/goal"
+    android:textSize="20sp"
+    android:text="100"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/goal"
+    android:id="@+id/lblavg"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:text="Avg"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lblavg"
+    android:id="@+id/avg"
+    android:layout_marginStart="10dp"
+    android:textSize="20sp"
+    android:text="111"/>
+
+<com.jjoe64.graphview.GraphView
+    android:id="@+id/graph"
+    android:layout_width="280dp"
+    android:layout_height="180dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true" />
+
+</RelativeLayout>

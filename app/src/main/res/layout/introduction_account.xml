@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/respira_no_title"
+    android:backgroundTint="#704ebcc2"
+    >
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/info_icon"
+        android:id="@+id/create_habti"
+        />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_habti"
+        android:layout_centerHorizontal="true"
+        android:text="Registration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/titledialogemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+
+            android:text="Enter your credentials"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:text="dimitri"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="myusername"
+            android:textSize="20sp"
+            android:layout_below="@id/titledialogemail"
+            android:id="@+id/username"/>
+
+        <EditText
+            android:text="dimi@gmail.com"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="mymail@example.com"
+            android:textSize="20sp"
+            android:layout_below="@id/username"
+            android:id="@+id/email"/>
+        <EditText
+            android:inputType="textPassword"
+            android:text=""
+            android:hint="10character password"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:id="@+id/pwd"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#ff0000"
+    android:text="FEEDBACK"
+    android:layout_below="@id/pwd"
+    android:id="@+id/feedbackDB"
+    android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buttonregister"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#4ebcc2"
+            android:textColor="#FEFEFE"
+            android:layout_below="@+id/pwd"
+            android:layout_alignParentStart="true"
+            android:text="register" />
+ <Button
+            android:id="@+id/buttonlogin"
+     android:layout_marginTop="20dp"
+     android:layout_marginRight="30dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#4ebcc2"
+            android:textColor="#FEFEFE"
+            android:layout_below="@+id/pwd"
+            android:layout_alignParentEnd="true"
+            android:text="login" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

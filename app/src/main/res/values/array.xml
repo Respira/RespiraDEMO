@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <string-array name="listArray">
+            <item>Yes</item>
+            <item>No</item>
+
+        </string-array>
+
+        <string-array name="listValues">
+            <item>1</item>
+            <item>0</item>
+        </string-array>
+    </resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="15dp"
+        android:layout_gravity="start"
+        android:src="@drawable/backicon"
+        android:id="@+id/returnicon" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/settings"
+            android:id="@+id/settings"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/feedback"
+            android:id="@+id/feedback"
+            android:layout_toStartOf="@id/settings"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/question"
+            android:id="@+id/help"
+            android:layout_toStartOf="@id/feedback"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/respira_no_title"
+        android:layout_gravity="center_horizontal"
+ />
+
+        <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+        <RelativeLayout
+        android:id="@+id/menu"
+            android:layout_width="match_parent"
+        android:layout_height="160dp"
+
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="#efefef"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+
+            <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/show_graph"
+            android:id="@+id/graphicon"
+            android:layout_marginStart="27dp"
+            android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+            android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/microphone"
+                android:layout_marginBottom="45dp"
+                android:id="@+id/microphoneicon"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/language"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+                android:src="@drawable/wpm"
+                android:id="@+id/wpmicon"
+                android:layout_marginEnd="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/monitorring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Words Per Minute"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_below="@+id/progressBar1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:id="@+id/Currentratio"
+            android:textSize="55dp"
+            android:gravity="center"
+
+            android:layout_below="@+id/monitorring"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:text="Words Per Minute Monitoring"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toEndOf="@+id/toggleButton1"
+            android:layout_marginTop="128dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/intro"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clarity"
+            android:textAlignment="center"
+
+            android:textSize="22dp"
+            android:gravity="center"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/Currentratio"
+            android:layout_centerHorizontal="true" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:layout_marginBottom="-10dp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

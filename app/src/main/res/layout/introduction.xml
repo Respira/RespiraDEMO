@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/respira_no_title"
+    android:backgroundTint="#704ebcc2"
+    >
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/info_icon"
+        android:id="@+id/create_habti"
+        />
+
+        <TextView
+            android:text="Welcome!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:layout_below="@id/create_habti"
+            android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:text="Thank you for downloading Respira!\nRespira is the application that can finally help you improve your speaking habits!
+\n\nWe focus on helping stuttering people by providing real time feedback when talking."
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/welcome"
+        android:layout_alignParentStart="true" />
+
+<TextView
+    android:text="Respira can also be used for practicing public speaking, preparing your presentation ...\n\nSpeaking is important, create the habit today.\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+<TextView
+        android:textAlignment="center"
+        android:text="We want your opinion!\nPlease do not hesitate to send comments or suggestions, we reply to questions and are always improving the app."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        android:paddingLeft="20dp"
+
+        android:textSize="16dp"
+        android:paddingRight="10dp"
+    android:layout_below="@+id/textView5"
+    android:paddingTop="10dp"/>
+
+
+
+
+
+    <TextView
+        android:text="For more information about the project\nvisit www.respira.io "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/website"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="19.5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

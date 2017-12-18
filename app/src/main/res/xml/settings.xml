@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <ListPreference
+        android:key="language"
+        android:title="Recognizer language"
+        android:defaultValue="1"
+        android:dialogTitle="Application language"
+        android:summary="Select the Application language"
+        />
+
+    <Preference android:title="Google speech settings"
+        android:key="speechsettings"
+        android:summary="Go here to download offline speech packages"
+        />
+    <Preference android:title="Reset saved conversations"
+        android:key="reset"
+        android:summary="Delete all saved conversations from your phone"
+        />
+    <Preference android:title="Show the introduction"
+        android:key="intro"
+        android:summary="Replay the introduction from the first use"
+        />
+
+
+    <CheckBoxPreference android:title="Use Respira for voice calls"
+
+        android:summary="This option if selected will help you speaking while calling"
+        android:key="intercept" />
+    <CheckBoxPreference android:title="Vibrate when talking too fast"
+        android:summary="This option if selected will let your phone vibrate when you're talking to fast"
+        android:key="vibrate" />
+
+
+</PreferenceScreen>
